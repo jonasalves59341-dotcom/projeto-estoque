@@ -1,0 +1,26 @@
+<section class="panel">
+    <h2>Cadastrar usuário e perfil</h2>
+    <p class="notice">Cada perfil recebe acesso somente às abas e operações permitidas para seu cargo.</p>
+    <form id="user-form">
+        <div class="form-grid">
+            <div class="field"><label for="new-user-name">Usuário</label><input class="control" id="new-user-name" minlength="3" autocomplete="off" required></div>
+            <div class="field"><label for="new-user-password">Senha (mínimo de 6 caracteres)</label><input class="control" id="new-user-password" type="password" minlength="6" autocomplete="new-password" required></div>
+            <div class="field"><label for="new-user-role">Cargo / perfil</label><select class="control" id="new-user-role" required></select></div>
+        </div>
+        <div class="form-actions"><button class="button" type="submit">Cadastrar usuário</button></div>
+    </form>
+</section>
+<section class="panel">
+    <h2>Usuários cadastrados</h2>
+    <div class="table-wrap"><table><thead><tr><th>Usuário</th><th>Perfil</th></tr></thead><tbody id="users-table"></tbody></table></div>
+</section>
+<section class="panel">
+    <h2>Permissões por perfil</h2>
+    <div class="table-wrap"><table><thead><tr><th>Perfil</th><th>Acessos</th></tr></thead><tbody>
+        <tr><td>Auxiliar de estoque</td><td>Consulta; pedidos somente para visualização.</td></tr>
+        <tr><td>Almoxarife</td><td>Consulta; pedidos somente para visualização; inventário somente para visualização.</td></tr>
+        <tr><td>Coordenador</td><td>Consulta; pedidos somente para visualização; inventário completo.</td></tr>
+        <tr><td>Comprador/cadastro</td><td>Consulta; cadastro e exclusão de produtos.</td></tr>
+        <tr><td>Administrador</td><td>Acesso completo, incluindo cadastro e exclusão de produtos e gestão de usuários.</td></tr>
+    </tbody></table></div>
+</section>

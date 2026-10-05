@@ -1,0 +1,17 @@
+<section class="panel">
+    <h2>Novo produto</h2>
+    <form id="product-form">
+        <div class="form-grid">
+            <div class="field"><label for="product-code">Código</label><input class="control" id="product-code" maxlength="40" required></div>
+            <div class="field"><label for="product-name">Nome do produto</label><input class="control" id="product-name" maxlength="120" required></div>
+            <div class="field"><label for="product-price">Preço unitário (R$)</label><input class="control" id="product-price" type="number" min="0" step="0.01" required></div>
+            <div class="field"><label for="product-qty">Quantidade inicial</label><input class="control" id="product-qty" type="number" min="0" step="1" required></div>
+        </div>
+        <div class="form-actions"><button class="button" type="submit">Cadastrar produto</button></div>
+    </form>
+</section>
+<section class="panel">
+    <h2>Produtos cadastrados</h2>
+    <p class="muted">Apagar remove o produto do catálogo. O histórico de movimentações é preservado.</p>
+    <div class="table-wrap"><table><thead><tr><th>Código</th><th>Produto</th><th>Estoque</th><th>Ação</th></tr></thead><tbody id="product-admin-table"></tbody></table></div>
+</section>
