@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistema acadêmico demonstrativo para controle de estoque.">
+    <title>Entrar | Estoque Fácil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/estoque.js"></script>
+    <script defer src="js/auth.js"></script>
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-intro">
+            <span class="brand-mark" aria-hidden="true">E</span>
+            <h1>Estoque Fácil</h1>
+            <p>Uma forma simples de acompanhar produtos, movimentações e pedidos da sua operação.</p>
+            <ul class="feature-list"><li>Consulta rápida e histórico de movimentações</li><li>Controle de acesso por perfil</li><li>Inventário e orçamentos integrados</li></ul>
+        </section>
+        <section class="auth-card" aria-label="Acesso ao sistema">
+            <div id="login-panel">
+                <h2>Acessar o sistema</h2><p>Entre com seus dados de usuário.</p>
+                <form id="login-form" class="form-stack">
+                    <div class="field"><label for="login-user">Usuário</label><input id="login-user" autocomplete="username" required></div>
+                    <div class="field"><label for="login-password">Senha</label><input id="login-password" type="password" autocomplete="current-password" required></div>
+                    <button class="button" type="submit">Entrar</button>
+                </form>
+                <p class="auth-toggle">Primeiro acesso? <a href="#cadastro" id="show-register">Criar administrador</a></p>
+            </div>
+            <div id="register-panel" class="hidden">
+                <h2>Criar administrador</h2><p>O primeiro usuário cadastrado recebe acesso administrativo.</p>
+                <form id="register-form" class="form-stack">
+                    <div class="field"><label for="register-user">Usuário</label><input id="register-user" minlength="3" autocomplete="username" required></div>
+                    <div class="field"><label for="register-password">Senha (mínimo de 6 caracteres)</label><input id="register-password" type="password" minlength="6" autocomplete="new-password" required></div>
+                    <button class="button" type="submit">Cadastrar administrador</button>
+                </form>
+                <p class="auth-toggle">Já tem uma conta? <a href="#login" id="show-login">Voltar ao login</a></p>
+            </div>
+            <p class="notice warning">Demonstração acadêmica: os dados são armazenados neste navegador. Não use senhas reais.</p>
+        </section>
+    </main>
+</body>
+</html>
