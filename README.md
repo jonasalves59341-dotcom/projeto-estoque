@@ -2,7 +2,7 @@
 
 Sistema acadêmico demonstrativo para controle de estoque com abas e perfis de acesso.
 
-## Visão geral
+Visão geral
 
 Este projeto é uma aplicação web estática em HTML, CSS e JavaScript para gerenciamento básico de estoque, com autenticação local, organização por perfis de usuário e módulos operacionais para consulta, inventário, pedidos, faturamento, cadastro de produtos e gestão de usuários.
 
